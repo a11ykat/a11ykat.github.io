@@ -258,8 +258,8 @@
 
   // Populate UI using team name
   const properName = teamName.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); });
-  document.title = 'Team Initiatives | ' + properName;
-  document.querySelector('#header').innerText = 'Team Initiatives | ' + properName;
+  document.title = properName;
+  document.querySelector('#header').innerText = properName;
 
   // Initialize Firebase
   var config = {
